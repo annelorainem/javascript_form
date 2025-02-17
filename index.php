@@ -43,7 +43,12 @@
             const row3 = studentTable.insertRow();
             const row3col1 = row3.insertCell();
             row3col1.colSpan="2";
-            row3col1.innerHTML = "TEST";
+            
+            const inputSubmit = document.createElement("input");
+            inputSubmit.type = "submit";
+            inputSubmit.value = "Create Record";
+
+            row3col1.append(inputSubmit);
         </script>
     </body>
 
